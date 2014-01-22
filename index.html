@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Web-Engineering I: Grundlagen der Web-Entwicklung </title>
+
+<!-- Bootstrap core CSS -->
+<link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<!-- Custom styles for this template -->
+<link href="assets/css/custom.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- Wrap all page content here -->
+<div id="wrap"> 
+  
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="#">Web-Engineering I</a> </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projekte <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://ludwighauser.cloudcontrolled.com/xhtml/">W3C-valide XHTML-Tabelle</a></li>
+              <li><a href="http://ludwighauser.cloudcontrolled.com/suche/">Barrierefreies Suchformular</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nicht Prüfungsrelevant</li>
+              <li><a href="http://www.codecademy.com/de/lhauser">Codeacademy</a></li>
+              <!--<li><a href="#">One more separated link</a></li>-->
+            </ul>
+          </li>
+           <li><a href="impressum.html">Impressum</a></li>
+           <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
+  
+  <!-- Begin page content -->
+  <div class="container">
+    <div class="page-header">
+      <h1> Kompetenzziel: <small>&quot;Website in der Cloud&quot; </small> </h1>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-8">
+        <div class="well">
+          <p class="text-right"><small><span class="glyphicon glyphicon-time"></span> 07. Januar, 2014 - 19:10 Uhr | gepostet von: lhauser</small></p>
+          <h4>Mit CSS formatierte Tabelle aller &quot;XHTML 1.0 strict&quot;-Elemente</h4>
+          <hr>
+          <p>
+          <p>In dieser Hausaufgabe sollen Sie auf Ihrer Website bei cloudControl eine XHTML-1.0-strict-Seite erstellen (ohne Bootstrap!). Die Seite soll eine &quot;schön&quot; formatierte Tabelle aller 77 Elemente zeigen mit den folgenden Spalten: </p>
+          <ol>
+            <li> Element-Tag mit den spitzen Klammern: <code>&lt;tag&gt;&lt;/tag&gt;</code> oder falls zulässig <code>&lt;tag /&gt;</code></li>
+            <li>Elementbeschreibung</li>
+            <li>Inline- oder Blockelement?</li>
+            <li>Semantisches HTML?</li>
+          </ol>
+          <p>CSS und HTML der Seite sind mit dem W3C-Validator zu validieren (keine Fehler, keine Warnungen). <br />
+            Platzieren Sie die folgenden zwei Icons (XHTML 1.0 und CSS level 2) auf Ihrer Seite:</p>
+          <p><img alt="enter image description here" src="http://www.w3.org/Icons/valid-xhtml10" /> <img alt="enter image description here" src="http://www.w3.org/Icons/valid-css2-blue" /> <br />
+          </p>
+          <p class="text-right"> <a href="http://ludwighauser.cloudcontrolled.com/xhtml/" class="btn btn-default btn-small">Zur Lösung &#8250; &#8250;</a>
+          <p><small> Tags: Hausaufgabe, XHTML<br>
+            Autor: lhauser </small></p>
+        </div>
+        <div class="well">
+          <p class="text-right"><small><span class="glyphicon glyphicon-time"></span> 07. Januar, 2014 - 19:05 Uhr | gepostet von: lhauser</small></p>
+          <h4>Barrierefreies Suchformular</h4>
+          <hr>
+          <p>
+          <p>Sie sollen für die deutsche Wikipedia ein barrierefreies Webformular für die Suche nach Artikeln entwickeln. Als erste Orientierung kann Ihnen das Beispiel im Wikipedia-Artikel &quot;Webformular&quot; dienen:</p>
+          <p><code>
+  &lt;form action=&quot;http://de.wikipedia.org/wiki/Spezial:Suche&quot;&gt;<br>
+  &lt;fieldset&gt;<br>
+  &lt;legend&gt;Suchen&lt;/legend&gt;<br>
+  &lt;input type=&quot;text&quot;   name=&quot;search&quot; value=&quot;&quot; /&gt;<br>
+  &lt;input type=&quot;submit&quot; name=&quot;go&quot; value=&quot;Artikel&quot;/&gt;<br>
+  &lt;input type=&quot;submit&quot; name=&quot;fulltext&quot; value=&quot;Volltext&quot; /&gt;<br>
+  &lt;/fieldset&gt;<br>
+  &lt;/form&gt;</code></p>
+          <p>Ihr Suchformular muss sich auf Ihrer Website in der Cloud von cloudControl befinden und den Test auf Einhaltung der Richtlinien WCAG 2.0 AAA und Section 508 bestehen. </p>
+          <p><img alt="enter image description here" src="http://www.w3.org/WAI/wcag2AAA.gif" /></p>
+          <p class="text-right"> <a href="http://ludwighauser.cloudcontrolled.com/suche/" class="btn btn-default btn-small">Zur Lösung &#8250; &#8250;</a>
+          <p><small> Tags: Hausaufgabe, Barrierefrei, Suchformular<br>
+            Autor: lhauser </small></p>
+        </div>
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <div class="well">Wär ich ein richtiges Blog würde es hier ein Suche-Widget geben!</div>
+        <div class="well">Wär ich ein richtiges Blog würde es hier ein  Shoutbox-Widget geben!</div>
+        <div class="well">Wär ich ein richtiges Blog würde es hier ein  Kategorien-Widget geben!</div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div id="footer">
+  <div class="container">
+    <p class="text-muted text-right"> <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
