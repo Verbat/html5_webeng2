@@ -3,7 +3,7 @@
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>HTML5 Video</title>
         <meta name="description" content="">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
@@ -40,13 +40,14 @@
     <body style="text-align:center">
 
         <!-- Add your site or application content here -->
-        <h1>HTML5 Video element incl. sample video and subtitles</h1>
+        <h1>HTML5 Video element incl. sample video and VTT-subtitles </h1>
         <p>
           <video width="560" height="320" controls>
-            <source src=video/sample-videos/small.webm type=video/webm>
-            <source src=video/sample-videos/small.ogv type=video/ogg>
-            <source src=video/sample-videos/small.mp4 type=video/mp4>
-            <source src=video/sample-videos/small.3gp type=video/3gp>
+            <source src=small.webm type=video/webm>
+            <source src=small.ogv type=video/ogg>
+            <source src=small.mp4 type=video/mp4>
+            <source src=small.3gp type=video/3gp> 
+            <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
             Your browser does not support the video tag.
           </video>
           
@@ -54,6 +55,8 @@
           <script src="../../js/helper.js"></script>
           
           <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->        </p>
+        <p>Subtitles are not supportet at every browser!<br>
+        </p>
         <p>&nbsp;</p>
         <script>
             var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
