@@ -35,14 +35,21 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <style type="text/css">
+		video {  
+		   width:100%; 
+		   max-width:560px; 
+		   height:auto; 
+		}
+        </style>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body style="text-align:center">
 
         <!-- Add your site or application content here -->
-        <h1>HTML5 Video element incl. sample video and VTT-subtitles </h1>
+        <h1>HTML5 Video element incl. sample video and VTT-subtitles (if supported)</h1>
         <p>
-          <video width="560" height="320" controls>
+          <video controls>
             <source src=video/sample-videos/small.webm type=video/webm>
             <source src=video/sample-videos/small.ogv type=video/ogg>
             <source src=video/sample-videos/small.mp4 type=video/mp4>
@@ -55,14 +62,11 @@
           <script src="js/helper.js"></script>
           
           <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->        </p>
-        <p>Subtitles are not supportet at every browser!<br>
-        </p>
-        <p>&nbsp;</p>
         <script>
             var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
             g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
             s.parentNode.insertBefore(g,s)}(document,"script"));
-        </script>
+          </script>
     </body>
 </html>
